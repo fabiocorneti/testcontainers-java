@@ -192,7 +192,10 @@ dependencies {
         exclude(group: 'com.github.docker-java', module: 'docker-java-core')
         exclude(group: 'net.java.dev.jna')
         exclude(group: 'org.slf4j')
+        exclude(group: 'com.squareup.okio')
     }
+
+    shaded 'com.squareup.okio:okio:2.10.0-SNAPSHOT'
 
     compile 'com.github.docker-java:docker-java-transport-zerodep:3.2.7'
 
